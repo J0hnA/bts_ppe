@@ -24,35 +24,36 @@
 				<form role="form" method="post"
 					action="index.php?uc=connexion&action=valideConnexion">
 					<fieldset>
-					<!-- Ajout d'un menu déroulant permettant de choisir le type d'utilisateur (Comptable ou visiteur) -->
-						<div class="form-group">
-						<div class="input-group">
-						<div class="form-group">
-						<div class="input-group">
-							<select class="form-control" name="fct">
-								<option>Visiteur</option>
-								<option>Comptable</option>
-							</select>
-							</div>
-						</div>
+						<!-- Ajout d'un menu déroulant permettant de choisir le type d'utilisateur (Comptable ou visiteur) -->
 						<div class="form-group">
 							<div class="input-group">
-								<span class="input-group-addon"> <i
-									class="glyphicon glyphicon-user"></i>
-								</span> <input class="form-control" placeholder="Login"
-									name="login" type="text" maxlength="45">
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="input-group">
-								<span class="input-group-addon"> <i
-									class="glyphicon glyphicon-lock"></i>
-								</span> <input class="form-control" placeholder="Mot de passe"
-									name="mdp" type="password" maxlength="45">
-							</div>
-						</div>
-						<input class="btn btn-lg btn-success btn-block" type="submit"
-							value="Se connecter">
+								<div class="form-group">
+									<div class="input-group">
+										<select class="form-control" name="fct">
+											<option>Visiteur</option>
+											<option>Comptable</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon"> <i
+											class="glyphicon glyphicon-user"></i>
+										</span> <input class="form-control" placeholder="Login"
+											name="login" type="text" maxlength="45">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon"> <i
+											class="glyphicon glyphicon-lock"></i>
+										</span> <input class="form-control" placeholder="Mot de passe"
+											name="mdp" type="password" maxlength="45">
+									</div>
+								</div>
+								<input class="btn btn-lg btn-success btn-block" type="submit"
+									value="Se connecter">
+					
 					</fieldset>
 				</form>
 			</div>
