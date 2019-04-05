@@ -27,6 +27,7 @@
 					<!-- Ajout d'un menu déroulant permettant de choisir le type d'utilisateur (Comptable ou visiteur) -->
 						<div class="form-group">
 						<div class="input-group">
+						
 							<select class="form-control" name="fct">
 								<option>Visiteur</option>
 								<option>Comptable</option>
