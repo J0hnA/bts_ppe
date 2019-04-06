@@ -38,7 +38,7 @@ switch ($action) {
                 $id = $user['id'];
                 $nom = $user['nom'];
                 $prenom = $user['prenom'];
-                connecter($id, $nom, $prenom);
+                connecter($id, $nom, $prenom, $fct);
                 header('Location: index.php');
             }
             //Test sur la fonction de l'utilisateur, si c'est un comptable :
@@ -52,7 +52,7 @@ switch ($action) {
                 $id = $user['id'];
                 $nom = $user['nom'];
                 $prenom = $user['prenom'];
-                connecter($id, $nom, $prenom);
+                connecter($id, $nom, $prenom, $fct);
                 header('Location: index.php');
             }
         }
