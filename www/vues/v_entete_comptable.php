@@ -49,10 +49,10 @@
                                     Accueil
                                 </a>
                             </li>
-                            <li <?php if ($uc == 'gererFrais') { ?>class="active"<?php } ?>>
-                                <a href="index.php?uc=gererFrais&action=saisirFrais">
-                                    <span class="glyphicon glyphicon-pencil"></span>
-                                    Renseigner la fiche de frais
+                            <li <?php if ($uc == 'validationFrais') { ?>class="active"<?php } ?>>
+                                <a href="index.php?uc=validationFrais&action=nValue">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                    Valider les fiches de frais
                                 </a>
                             </li>
                             <li <?php if ($uc == 'etatFrais') { ?>class="active"<?php } ?>>
