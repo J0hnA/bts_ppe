@@ -17,11 +17,12 @@
 if ($estConnecte) {
     // Si c'est un visiteur, l'affichage pour les visiteurs s'affiche.
     if ($_SESSION['fct'] === 'Visiteur') {
-        include 'v_accueil_visiteur.php';
+        include 'vues/v_accueil_visiteur.php';
         // Sinon si c'est un comptable, l'affichage pour les comptables s'affiche.
     } elseif ($_SESSION['fct'] === 'Comptable') {
-        include 'v_accueil_comptable.php';
+        include 'vues/v_accueil_comptable.php';
     }
 } else {
+    
     include 'vues/v_connexion.php';
 }
