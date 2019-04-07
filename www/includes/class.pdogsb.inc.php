@@ -123,6 +123,18 @@ class PdoGsb
         $requetePrepare->execute();
         return $requetePrepare->fetch();
     }
+    
+    /**
+     * @return un tableau associatif avec le nom, prenom et id de chaque visiteurs de la table visiteur
+     */
+    public function getAllVisiteurs(){
+        $requetePrepare = PdoGsb::$monPdo->prepare(
+            'SELECT visiteur.nom AS nom, visiteur.prenom AS prenom, visiteur.id AS id '
+            . 'FROM visiteur '
+            );
+        $requetePrepare->execute();
+        return $requetePrepare->fetchAll();
+    }
 
     /**
      * Retourne sous forme d'un tableau associatif toutes les lignes de frais
