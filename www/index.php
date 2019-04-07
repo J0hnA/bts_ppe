@@ -39,6 +39,10 @@ case 'gererFrais':
 case 'etatFrais':
     include 'controleurs/c_etatFrais.php';
     break;
+    // Ajout redirection controleur pour c_validationfrais.php
+case 'validationFrais':
+    include 'controleurs/c_validationfrais.php';
+    break;
 case 'deconnexion':
     include 'controleurs/c_deconnexion.php';
     break;
